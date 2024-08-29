@@ -1,17 +1,17 @@
 First you need to create a database with the **users** table.
 
+    CREATE DATABASE php-auth
+
 Then run the following statement:
 
-<code>
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    email VARCHAR(255) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL
-);
-</code>
+    CREATE TABLE users (
+        id INT AUTO_INCREMENT PRIMARY KEY,
+        email VARCHAR(255) NOT NULL UNIQUE,
+        password VARCHAR(255) NOT NULL
+    );
 
-Then start the php app in the built-in web server:
 
-<code>
-php -S localhost:3000
-</code>
+Start the php app in the built-in web server:
+
+    php -S localhost:3000
+
