@@ -1,4 +1,17 @@
-# TODO: 
-    - Create database.
-    - Create table users with the following fields: id, email, password. 
-  
+First you need to create a database with the **users** table.
+
+Then run the following statement:
+
+<code>
+CREATE TABLE users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    email VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL
+);
+</code>
+
+Then start the php app in the built-in web server:
+
+<code>
+php -S localhost:3000
+</code>
